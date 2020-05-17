@@ -1,0 +1,71 @@
+background(186, 145, 20); // wooden table
+//noStroke();
+ellipse(200, 200, 350, 350); // plate
+ellipse(200, 200, 300, 300); 
+
+//chicken thigh
+fill(222, 222, 222);
+rect(139, 183, 23, 100, 93);
+fill(166, 94, 5);
+ellipse(150, 150, 83, 127);
+fill(222, 222, 222);
+ellipse(174, 283, 40, 40);
+ellipse(132, 283, 40, 40);
+ellipse(152, 292, 40, 40);
+
+//peas
+var peas = function (){ 
+    var peaX = random(208, 290);
+    var peaY = random(91, 175);
+fill(5, 255, 0);
+ellipse(peaX, peaY, 15, 15);
+};
+for (var i = 0; i < 100; i++){
+    if( i < 100){
+        peas();
+    }
+}
+
+//rice
+var rice = function(){
+    var riceX = random(237, 326);
+    var riceY = random(183, 270);
+    
+    fill(219, 215, 215);
+    ellipse(riceX, riceY, 5, 15);
+};
+for (var j = 0; j < 300; j++){
+    if( j < 300){
+        rice();
+    }
+}
+
+//tomato
+var tomato = function(){
+    var tomatoX = random(76, 99);
+    var tomatoY = random(200, 253);
+fill(240, 39, 39);
+ellipse(tomatoX, tomatoY, 55, 55);
+fill(237, 87, 87);
+arc(tomatoX + 3, tomatoY + 5, 30, 30, 1, 79);
+arc(tomatoX - 2, tomatoY + 5, 30, 30, 85, 146);
+arc(tomatoX + 4, tomatoY - 2, 30, 30, 331, 365);
+arc(tomatoX + 2, tomatoY - 3, 30, 30, -93, -45);
+arc(tomatoX - 6, tomatoY, 30, 30, 146, 206);
+arc(tomatoX - 3, tomatoY - 3, 30, 30, 215, 270);
+};
+for (var k = 0; k < 5; k++){
+    tomato();
+}
+
+//potatos
+var potatos = function(){
+    var potatoX = random(205, 245);
+    var potatoY = random(245, 268);
+    fill(237, 227, 43);
+rect(potatoX, potatoY, 9, 70, 0);
+rect(potatoX + 5, potatoY, 9, 70, 0);
+};
+for (var l = 0; l < 20; l++){
+    potatos();
+}
